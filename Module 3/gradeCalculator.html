@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <metameta name="viewport"         content="width=device-width, initial-scale=1.0" />
+  <title>Student grade calculator </title>
+ <style>
+   h1 {
+     text-align: center;
+     border: 2px solid gray;
+     color: Red;
+   } 
+ </style>
+</head>
+<body>
+  <h1>Report Sheet for G.S.S Garki</h1>
+  <h3>NB: This page is only for the teachers!</h3>
+  <p> Check, and print out your students score sheet below, by entering each students score</p>
+  <button id="click">Click to print result</button>
+  <script>
+    var userName = prompt('Enter your name?');
+    var grading = prompt('Enter your Score');
+    if(grading>=70 || grading==100){
+      alert('You have an A!')
+    }
+    else if(grading<=69 && grading>=40){
+      alert('You have an C!')
+    }
+    else{
+      alert('You have an F')
+    }
+  </script>
+</body>
+</html>
